@@ -637,7 +637,7 @@ export default function App() {
                 key={index}
                 data-index={index}
                 type="button"
-                className="cell"
+                className={`cell${value ? ` cell-${value.toLowerCase()}` : ''}`}
                 onClick={() => handleCellClick(index)}
                 aria-label={`Cell ${index + 1}${value ? `, ${getPlayerSymbol(value, playerSymbols)}` : ''}`}
                 disabled={!gameActive || Boolean(value)}

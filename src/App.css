@@ -1,0 +1,33 @@
+@import './tokens.css';
+
+h1 {
+  color: var(--aliases-color-heart-primary-500);
+}
+
+.status {
+  font-size: var(--semantics-typography-size-2xl);
+  font-weight: var(--semantics-typography-font-weight-bold);
+  line-height: 1.25; /* no token: semantics line-height ratio 125% is a quoted string, not a usable CSS value */
+}
+
+.cell-x {
+  color: var(--aliases-color-head-secondary-600);
+}
+
+.cell-o {
+  color: var(--aliases-color-heart-primary-500);
+}
+
+/* Matches button-core-v2: size Large, theme core-brand-primary, type Filled, stage Enabled */
+.reset-button {
+  padding: var(--semantics-measures-spacing-008) 1.375rem; /* 22px horizontal: no matching spacing token */
+  border: 0;
+  border-radius: var(--semantics-measures-radius-none);
+  background: var(--aliases-color-head-primary-600);
+  color: var(--aliases-color-foundation-white);
+  font-size: 0.9375rem; /* 15px: no matching size token */
+  font-weight: var(--semantics-typography-font-weight-medium);
+  line-height: 1.625rem; /* 26px: no matching line-height token */
+  letter-spacing: 0.46px; /* no matching letter-spacing token */
+  box-shadow: none;
+}
